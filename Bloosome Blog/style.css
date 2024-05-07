@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 70vw;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+.header_container{
+    margin-bottom: 2.5rem;
+}
+.header_title{
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: 600;
+}
+.header_description{
+    max-width: 568px;
+    text-align: center;
+    color: #4d3f3f;
+    margin: 0 auto;
+}
+.main_container{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit ,minmax(180px,200px));
+    justify-content: center;
+ }
+.card_container{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #665252;
+    border-radius: 10px;
+    gap: 0.1rem;
+}  
+.card_image_container{
+     position: relative;
+     overflow: hidden;
+     height: 10rem;
+}
+.image_container{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.card_title_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+}
+.card_container :hover .image_container{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+.card_title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.2rem;
+    color: #281e1e;
+    margin-bottom: 1rem;
+}
+.card_title_anchor :hover{
+    color: #2424db;
+}
+.card_title_decription{
+    color: #5f4848;
+    font-size: 0.9rem;
+    width: 90%;
+    line-height: 0.8rem;
+    font-weight: 300;
+}
+.card_footer_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+.card_footer_left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card_footer_img{
+    height: 2.5rem;
+    width: 2.5rem;
+    overflow:hidden;
+    border: 1px solid #605757;
+    border-radius: 50%;
+    background-color: hsl(0, 45%, 98%);
+}
+.card_footer_name{
+    display: flex;
+    flex-direction: column;
+    color: hsl(0, 1%, 33%);
+    padding-left: 0.9rem;
+    font-size: 0.7rem;
+}
+.card_footer_right{
+    font-size: 0.9rem;
+    border: 1px solid black;
+    border-radius: 4px;
+    line-height: 1.3rem;
+}
